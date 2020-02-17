@@ -12,6 +12,8 @@ public class Tecnicas {
 	T3 = t3;
 	
 	int Danyo_1=Integer.parseInt(t1);
+	int Danyo_2=Integer.parseInt(t2);
+	int Danyo_3=Integer.parseInt(t3);
 	
 	}
 	

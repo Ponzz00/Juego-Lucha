@@ -6,7 +6,7 @@ public class main {
 		
 		//---------INSTANCIACION DE OBJETOS--------------------------------------------------------------------
 		
-		Personajes P =new Personajes(null, 0, 0, null);
+		Personajes P =new Personajes(null, 0, 0, null, null, null);
 		
 		//---------LLAMADA A LOS METODOS--------------------------------------------------------------------
 		
