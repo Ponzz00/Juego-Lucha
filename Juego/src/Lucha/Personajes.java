@@ -5,21 +5,23 @@ public class Personajes {
 	private String Nombre;
 	private int Vida;
 	private int Stamina;
-	public String T1="50";
-	public String T2="30";
-	public String T3="90";
+	private String T;
+	private int t1;
+	private int t2;
+	private int t3;
 	
-	
-	public Personajes(String nombre,int vida, int stamina,
-			String t1,String t2,String t3) {
-		Nombre= nombre;
+
+	public Personajes(String nombre, int vida, int stamina,
+			String t, int t1, int t2, int t3) {
+		Nombre = nombre;
 		Vida = vida;
 		Stamina = stamina;
-		T1=t1;
-		T2=t2;
-		T3=t3;
-	
+		T = t;
+		this.t1 = t1;
+		this.t2 = t2;
+		this.t3 = t3;
 	}
+
 
 	public String getNombre() {
 		return Nombre;
@@ -42,47 +44,45 @@ public class Personajes {
 		Stamina = stamina;
 	}
 
-	public String getT1() {
-		return T1;
+	public String getT() {
+		return T;
 	}
 
-	public void setT1(String t1) {
-		T1 = t1;
+	public void setT(String t) {
+		T = t;
 	}
 
-	public String getT2() {
-		return T2;
+	public int getT1() {
+		t1=50;
+		return t1;
 	}
 
-	public void setT2(String t2) {
-		T2 = t2;
+	public void setT1(int t1) {
+		this.t1 = t1;
 	}
 
-	public String getT3() {
-		return T3;
+	public int getT2() {
+		t2=30;
+		return t2;
 	}
 
-	public void setT3(String t3) {
-		T3 = t3;
+	public void setT2(int t2) {
+		this.t2 = t2;
 	}
 
-	public void ListaPersonajes() {
-		
-		Personajes Personaje[] = {new Personajes( "Goku",200,140,"KAME-HAME-HA","KAIO-ZEN","GENKIDAMA"),
-				new Personajes( "Vegetta",300,100,"CANYON GALICK","BIG-BANG ATTACK ","FINAL FLASH"),
-				new Personajes( "Freezer",100,240,"RAYO MORTAL","CANYON COSMICO","SUPERNOVA") };
-		for(int i=0;i<Personaje.length;i++)//USAMOS (FOR) PARA MOSTRAR LA LISTA UNO POR UNO
-			 System.out.println(Personaje[i]); 
-		}
+	public int getT3() {
+		t3=90;
+		return t3;
+	}
 
-
+	public void setT3(int t3) {
+		this.t3 = t3;
+	}
 
 	@Override
 	public String toString() {
 		return "Personajes [Nombre= " + Nombre + " // Vida= " + Vida 
-				+ " // Stamina= " + Stamina + " // T1= " + T1 + " // T2= " + T2
-				+ " // T3= " + T3 + "]";
+				+ " // Stamina= " + Stamina + " // T= / " + T + "]";
 	}
 	
 	}
-
