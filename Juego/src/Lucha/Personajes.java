@@ -82,7 +82,7 @@ public class Personajes {
 	@Override
 	public String toString() {
 		return "Personajes [Nombre= " + Nombre + " // Vida= " + Vida 
-				+ " // Stamina= " + Stamina + " // T= / " + T + "]";
+				+ " // Stamina= " + Stamina + " // (DANYO) T= / " + T + "]";
 	}
 	
 	}
